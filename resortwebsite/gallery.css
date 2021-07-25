@@ -1,0 +1,420 @@
+/* GALLERY */
+
+body {
+font-family: sans-serif;
+overflow-x: hidden;
+}
+
+img {
+width: 100%; /* need to overwrite inline dimensions */
+height: auto;
+}
+
+.heading-section{
+height: 150px;
+background-color: #fffa67;
+margin-bottom: 13px;
+}
+
+.head-h1{
+margin-bottom: .5em;
+position: relative;
+left: 450px;
+top: 11px;
+font-family: 'Amatic SC', cursive;
+font-size: 60px;
+}
+
+.head-h2{
+position: relative;
+left: 550px;
+top: -15px;
+font-weight: 0.1px;
+font-style: italic;
+color: #2d6187;
+font-family: 'Slabo 27px', serif;
+}
+
+.all-headings{
+  color: white;
+  position: relative;
+  top: 33px;
+  left: 510px;
+  font-family: 'Spectral SC', serif;
+  font-size: 30px;
+}
+
+.grid-container {
+display: grid;
+grid-template-columns:repeat(auto-fill, minmax(400px, 1fr));
+grid-gap: 1em;
+padding-left: 120px;
+padding-right: 120px;
+}
+
+.sep-image{
+height: 200px;
+width: 600px;
+}
+
+/* hover styles */
+.location-listing {
+position: relative;
+}
+
+.location-image {
+line-height: 0;
+overflow: hidden;
+}
+
+.location-image img {
+filter: blur(0px);
+transition: filter 0.3s ease-in;
+transform: scale(1.1);
+}
+
+.location-title {
+font-size: 1.5em;
+font-weight: bold;
+text-decoration: none;
+z-index: 1;
+position: absolute;
+height: 100%;
+width: 100%;
+top: 0;
+left: 0;
+opacity: 0;
+transition: opacity .5s;
+background: rgba(90,0,10,0.4);
+color: white;
+font-family: 'Slabo 27px', serif;
+
+/* position the text in t’ middle*/
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.location-listing:hover .location-title {
+opacity: 0.7;
+}
+
+.location-listing:hover .location-image img {
+filter: blur(2px);
+}
+
+.location-title:hover{
+font-size: 2em;
+delay:2s;
+}
+
+/* for touch screen devices */
+@media (hover: none) {
+.location-title {
+  opacity: 1;
+}
+.location-image img {
+  filter: blur(1px);
+}}
+
+#section-location{
+height: 780px;
+width: 1510px;
+margin-top: 200px;
+margin-left: 0;
+background-color: black;
+}
+
+.first-location{
+  height: 600px;
+  width: 1100px;
+  position: absolute;
+  left: 215px;
+  top: 550px;
+  background-image: url('https://www.deliveringcommunications.com/campaigns/PhiPhi%20Island%20Village/Download/Swimming%20Pool.jpg');
+  background-size: 100% 100%;
+  margin-top: 580px;
+  box-shadow: 1px 2px 10px 6px white;
+  animation: slider1 30s infinite linear;
+}
+
+@keyframes slider1 {
+  0%{background-image: url("https://www.deliveringcommunications.com/campaigns/PhiPhi%20Island%20Village/Download/Swimming%20Pool.jpg"); background-size: 100% 100%;}
+  10%{background-image: url( "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/38/e0/03/hilton-bali-resort.jpg"); background-size: 100% 100%;}
+  20%{background-image: url("https://images.trvl-media.com/hotels/5000000/4310000/4303800/4303775/8ee33b8b_z.jpg"); background-size: 100% 100%;}
+  30%{background-image: url("https://www.tahiti.com/images1/gallery/Tahiti-Pearl-Beach-Resort-2000x1200_53276.jpg"); background-size: 100% 100%;}
+  40%{background-image: url("https://cache.marriott.com/marriottassets/marriott/DPSKS/dpsks-infinity-pool-7200-hor-feat.jpg"); background-size: 100% 100%;}
+  50%{background-image: url("https://cf.bstatic.com/images/hotel/max1024x768/160/160540414.jpg"); background-size: 100% 100%;}
+  60%{background-image: url("https://a0.muscache.com/pictures/4bf1c666-3958-4fc3-b957-ffcc57f16ef4.jpg"); background-size: 100% 100%;}
+  70%{background-image: url("https://3j0grh44ocny4a6kcn288izx-wpengine.netdna-ssl.com/wp-content/uploads/2016/02/all-inclusive-st-lucia-950x530.jpg"); background-size: 100% 100%;}
+  80%{background-image: url("https://ttgasia.2017.ttgasia.com/wp-content/uploads/sites/2/2019/11/Centara-Ao-Nang-Beach-Resort-Spa-Krabi.jpg"); background-size: 100% 100%;}
+  90%{background-image: url( "https://www.wallpapertip.com/wmimgs/95-958662_ayana-beach-resort-bali-ayana-resort-and-spa.jpg"); background-size: 100% 100%;}
+}
+
+#section-amenities{
+  height: 780px;
+  width: 1510px;
+  margin-top: 100px;
+  margin-left: 0;
+  background-color: black;
+}
+
+.second-amenities{
+  height: 600px;
+  width: 1100px;
+  position: absolute;
+  left: 215px;
+  top: 800;
+  background-image: url('https://i.pinimg.com/originals/94/1f/fb/941ffb8f6730a8d0fd584a6f13d16183.jpg');
+  background-size: 100% 100%;
+  margin-top: 30px;
+  box-shadow: 1px 2px 10px 6px white;
+  animation: slider2 30s infinite linear;
+}
+
+@keyframes slider2 {
+  0%{background-image: url("https://i.pinimg.com/originals/94/1f/fb/941ffb8f6730a8d0fd584a6f13d16183.jpg"); background-size: 100% 100%;}
+  10%{background-image: url("https://i.pinimg.com/originals/84/13/f4/8413f4de27cce36b64d499063b1250e3.jpg"); background-size: 100% 100%;}
+  20%{background-image: url("https://www.kalkanregency.com.tr/wp-content/uploads/2016/food-at-the-regency/06%20Snax%20lunch%20around%20the%20pool.jpg"); background-size: 100% 100%;}
+  30%{background-image: url("https://calatorinbascheti.ro/wp-content/uploads/2020/06/rosiapensiunea.jpg"); background-size: 100% 100%;}
+  40%{background-image: url("https://www.capekantaryhotels.com/gallery/gallery/capecollection/capepanwa/orig-images/Cape%20Panwa%20Hotel-Uncle%20Nan%20Restaurant.jpg"); background-size: 100% 100%;}
+  50%{background-image: url("https://uploads.documents.cimpress.io/v1/uploads/33fe781f-2b7d-490e-864b-5c101bb85113~110/original?tenant=vbu-digital"); background-size: 100% 100%;}
+  60%{background-image: url("https://i.pinimg.com/originals/e0/42/9c/e0429c6c1f06f5e73127ae2b137060e8.jpg"); background-size: 100% 100%;}
+  70%{background-image: url("https://www.awesomedecors.us/wp-content/uploads/2019/05/luxury-living-room-lighting.jpg"); background-size: 100% 100%;}
+  80%{background-image: url("https://www.tradewindsresort.com/media/user/1477412428_twresort_mediagallery_propertyfeatures_26.jpg"); background-size: 100% 100%;}
+  90%{background-image: url("https://homemydesign.com/wp-content/uploads/2015/09/tropical-balinese-bedroom-style.jpg"); background-size: 100% 100%;}
+}
+
+#section-beaches{
+  height: 780px;
+  width: 1510px;
+  margin-top: 100px;
+  margin-left: 0;
+  background-color: black;
+}
+
+.third-beaches{
+  height: 600px;
+  width: 1100px;
+  position: absolute;
+  left: 215px;
+  top: 1000;
+  background-image: url('https://images.unsplash.com/photo-1525967304942-5e269b2dab58?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
+  background-size: 100% 100%;
+  margin-top: 30px;
+  box-shadow: 1px 2px 10px 6px white;
+  animation: slider3 30s infinite linear;
+}
+
+@keyframes slider3 {
+  0%{background-image: url("https://images.unsplash.com/photo-1525967304942-5e269b2dab58?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"); background-size: 100% 100%;}
+  10%{background-image: url("https://wallpapers.net/web/wallpapers/beach-resort-hd-wallpaper/thumbnail/lg.jpg"); background-size: 100% 100%;}
+  20%{background-image: url("https://www.mountlaviniahotel.com/wp-content/uploads/2013/04/high-res-beach-1-02-01.jpg"); background-size: 100% 100%;}
+  30%{background-image: url("https://lh3.googleusercontent.com/proxy/_yr3qQ7SJpBygICxvYfpirLABHZdROYbbmnaN19dI_XfEOv6SNOJpF2HONk6F06iiFFv7mwA6Dkmar70IHWjpCpdP5D29kVPIyGXYmLmApTq1Q7z98GlFumcFYiMeiRHqHhuzX3XDyo722PWUA"); background-size: 100% 100%;}
+  40%{background-image: url("https://www.north-island.com/wp-content/uploads/2019/03/2019-north-island-most-exclusive-beach-bar-8.jpg"); background-size: 100% 100%;}
+  50%{background-image: url("https://wallpapercave.com/wp/UZlSakf.jpg"); background-size: 100% 100%;}
+  60%{background-image: url("https://www.desktopbackground.org/download/o/2014/11/13/855316_tropical-beach-resort-hd-desktop-wallpapers-high-definition_2560x1024_h.jpg"); background-size: 100% 100%;}
+  70%{background-image: url("https://www.suayphuket.com/sites/default/files/styles/article-full/public/natai_beach_3_small.jpg"); background-size: 100% 100%;}
+  80%{background-image: url("https://static.toiimg.com/photo/msid-55310626,width-96,height-65.cms"); background-size: 100% 100%;}
+  90%{background-image: url("https://www.frommilesaway.com.au/wp-content/uploads/2018/07/Sri-Lanka-Mount-Lavinia-Beach-Colombo-2.jpg"); background-size: 100% 100%;}
+}
+
+#section-accommodation{
+  height: 780px;
+  width: 1510px;
+  margin-top: 100px;
+  margin-left: 0;
+  background-color: black;
+}
+
+.fourth-accommodation{
+  height: 600px;
+  width: 1100px;
+  position: absolute;
+  left: 215px;
+  top: 1000;
+  background-image: url('https://www.theasiacollective.com/wp-content/uploads/2018/08/Villa-Tamarama-513_MA024-25rgb-copy.jpg');
+  background-size: 100% 100%;
+  margin-top: 30px;
+  box-shadow: 1px 2px 10px 6px white;
+  animation: slider4 30s infinite linear;
+}
+
+@keyframes slider4 {
+  0%{background-image: url("https://www.theasiacollective.com/wp-content/uploads/2018/08/Villa-Tamarama-513_MA024-25rgb-copy.jpg"); background-size: 100% 100%;}
+  10%{background-image: url("https://www.telegraph.co.uk/content/dam/Travel/hotels/asia/thailand/phuket/trisara-phuket-thailand-prod.jpg"); background-size: 100% 100%;}
+  20%{background-image: url("https://www.tripsavvy.com/thmb/BSaJ1A6t6cNFhham9iFkFGd8nG8=/3000x2000/filters:fill(auto,1)/Trisara-Phuket-Thailand-Resort-Residential-Villa-58f6e8713df78ca159a19873.jpg"); background-size: 100% 100%;}
+  30%{background-image: url("https://static.asiawebdirect.com/m/phuket/portals/kosamui-com/homepage/ko-phangan/hotels/best-koh-phangan-beachfront-resorts/pagePropertiesImage/best-koh-phangan-beach-resorts.jpg.jpg"); background-size: 100% 100%;}
+  40%{background-image: url("https://pix10.agoda.net/hotelImages/165/165217/165217_18013019320061408734.jpg?s=1024x768"); background-size: 100% 100%;}
+  50%{background-image: url("https://cdn.cnn.com/cnnnext/dam/assets/160920111232-beachfront-hotel-5--four-seasons-biltmore-1-full-169.jpg"); background-size: 100% 100%;}
+  60%{background-image: url("https://www.itl.cat/pngfile/big/283-2839878_beach-house-beach-with-house-background.jpg"); background-size: 100% 100%;}
+  70%{background-image: url("https://www.theasiacollective.com/wp-content/uploads/2018/06/137008444-1024x682.jpg"); background-size: 100% 100%;}
+  80%{background-image: url("https://d2lwox1tpsrmex.cloudfront.net/hotels/2163/001_l.jpg"); background-size: 100% 100%;}
+  90%{background-image: url("https://maldives-magazine.com/pictures/maldibes-beach-pool-villa.jpg"); background-size: 100% 100%;}
+}
+
+#section-pools{
+  height: 780px;
+  width: 1510px;
+  margin-top: 100px;
+  margin-left: 0;
+  background-color: black;
+}
+
+.fifth-pools{
+  height: 600px;
+  width: 1100px;
+  position: absolute;
+  left: 215px;
+  top: 1100;
+  background-image: url('https://www.deliveringcommunications.com/campaigns/PhiPhi%20Island%20Village/Download/Swimming%20Pool.jpg');
+  background-size: 100% 100%;
+  margin-top: 30px;
+  box-shadow: 1px 2px 10px 6px white;
+  animation: slider5 30s infinite linear;
+}
+
+@keyframes slider5 {
+  0%{background-image: url("https://www.deliveringcommunications.com/campaigns/PhiPhi%20Island%20Village/Download/Swimming%20Pool.jpg"); background-size: 100% 100%;}
+  12%{background-image: url("https://i.pinimg.com/originals/91/93/d7/9193d7d900322ce434d3b061c7286dbd.jpg"); background-size: 100% 100%;}
+  25%{background-image: url("https://img.freepik.com/free-photo/sunset-pool_1203-3192.jpg?size=626&ext=jpg"); background-size: 100% 100%;}
+  36%{background-image: url("https://cf.bstatic.com/images/hotel/max1280x900/880/88012809.jpg"); background-size: 100% 100%;}
+  49%{background-image: url("https://www.fourseasons.com/content/dam/fourseasons/images/web/COS/COS_1114_aspect16x9.jpg/jcr:content/renditions/cq5dam.web.720.405.jpeg"); background-size: 100% 100%;}
+  62%{background-image: url("https://media.cntraveler.com/photos/53dad095dcd5888e145ceb60/4:5/w_767,c_limit/intercontinental-bali-resort-bali-indonesia-108733-1.jpg"); background-size: 100% 100%;}
+  76%{background-image: url("https://440kdn2uk4za2oqlvw22oj91-wpengine.netdna-ssl.com/wp-content/uploads/2019/02/couples.jpg"); background-size: 100% 100%;}
+  88%{background-image: url("https://www.rxwiki.com/sites/files/styles/article_2/public/photo/dreamstime_s_57793813.jpg"); background-size: 100% 100%;}
+}
+
+#section-spa{
+  height: 780px;
+  width: 1510px;
+  margin-top: 100px;
+  margin-left: 0;
+  background-color: black;
+}
+
+.sixth-spa{
+  height: 600px;
+  width: 1100px;
+  position: absolute;
+  left: 215px;
+  top: 1100;
+  background-image: url('https://www.fairmont.com/assets/0/104/231/402/404/405/b3146f7e-25f2-402f-a747-bfd0e15515fb.jpg');
+  background-size: 100% 100%;
+  margin-top: 30px;
+  box-shadow: 1px 2px 10px 6px white;
+  animation: slider6 30s infinite linear;
+}
+
+@keyframes slider6 {
+  0%{background-image: url("https://www.fairmont.com/assets/0/104/231/402/404/405/b3146f7e-25f2-402f-a747-bfd0e15515fb.jpg"); background-size: 100% 100%;}
+  10%{background-image: url("https://www.hoteliermiddleeast.com/public/images/2019/10/29/Treatment-room.jpg"); background-size: 100% 100%;}
+  20%{background-image: url("https://www.princehotels.com/karuizawa-east/wp-content/uploads/sites/7/2019/08/SPA%E3%80%901200%C3%971000%E3%80%91-4-1024x853.jpg"); background-size: 100% 100%;}
+  30%{background-image: url("https://s7d2.scene7.com/is/image/ritzcarlton/RCGUANG_00051?$LargeViewport42pct$"); background-size: 100% 100%;}
+  40%{background-image: url("https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/47/2020/02/21104611/Lets-Detox-resized.jpg"); background-size: 100% 100%;}
+  50%{background-image: url("https://www.travelforsenses.com/wp-content/uploads/2016/04/Devarana-Hot-Springs-Spa-Conghua-Guangzhouspa-spa-hi.jpg"); background-size: 100% 100%;}
+  60%{background-image: url("https://assets.anantara.com/image/upload/q_auto,f_auto/media/minor/anantara/images/maia-seychelles-villas/960x519/anantara_maia_seychelles_villas_spa_couples_treatment.jpg"); background-size: 100% 100%;}
+  70%{background-image: url("https://www.timbuktutravel.com/blog/wp-content/uploads/2017/04/BOTSWANAbaines-camp-outside-bath-botswana-2.jpg"); background-size: 100% 100%;}
+  80%{background-image: url("https://secure.uniquebookingservices.com/uf/properties/two-bare-feet/header-xlg/holywell-bay-luxury-cottage-with-outside-bath-tub-in-cornwall.jpg"); background-size: 100% 100%;}
+  90%{background-image: url("https://s7d2.scene7.com/is/image/ritzcarlton/50583642-7U2A9780-HDR-Edit-1?$XlargeViewport100pct$"); background-size: 100% 100%;}
+}
+
+#section-tree{
+  height: 780px;
+  width: 1510px;
+  margin-top: 100px;
+  margin-left: 0;
+  background-color: black;
+}
+
+.seventh-tree{
+  height: 600px;
+  width: 1100px;
+  position: absolute;
+  left: 215px;
+  top: 1100;
+  background-image: url('https://media-cdn.tripadvisor.com/media/vr-splice-j/04/93/b2/a8.jpg');
+  background-size: 100% 100%;
+  margin-top: 30px;
+  box-shadow: 1px 2px 10px 6px white;
+  animation: slider7 30s infinite linear;
+}
+
+@keyframes slider7 {
+  0%{background-image: url("https://media-cdn.tripadvisor.com/media/vr-splice-j/04/93/b2/a8.jpg"); background-size: 100% 100%;}
+  10%{background-image: url("https://i1.wp.com/www.dfordelhi.in/wp-content/uploads/2018/12/treehouse-point.jpg?fit=1040%2C681&ssl=1"); background-size: 100% 100%;}
+  20%{background-image: url("https://media.architecturaldigest.com/photos/576d58c25ea3e586576ec47c/master/w_4000,h_2667,c_limit/Tsala%20pool%20deck.jpg"); background-size: 100% 100%;}
+  30%{background-image: url("https://etiketamagazin.com/wp-content/uploads/2016/12/Raduha22.jpg"); background-size: 100% 100%;}
+  40%{background-image: url("https://prods3.imgix.net/images/articles/2018_04/facebook-best-tree-house-hotels.jpg"); background-size: 100% 100%;}
+  50%{background-image: url("https://exclusivegetaways.co.za/wp-content/uploads/2016/07/Mhondoro-Spa-Deck.jpg"); background-size: 100% 100%;}
+  60%{background-image: url("https://images.squarespace-cdn.com/content/v1/5388e453e4b0813d343199fc/1427733702655-0ZGQPADM5L5PK0N3JI0J/ke17ZwdGBToddI8pDm48kFWxnDtCdRm2WA9rXcwtIYR7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UcTSrQkGwCGRqSxozz07hWZrYGYYH8sg4qn8Lpf9k1pYMHPsat2_S1jaQY3SwdyaXg/Treehouse_bungalow+7a.jpg"); background-size: 100% 100%;}
+  70%{background-image: url("https://www.familyvacationcritic.com/uploads/sites/19/2018/05/lapa-rios-ecolodge-osa.jpg"); background-size: 100% 100%;}
+  80%{background-image: url("https://skamaniacoves.com/wp-content/uploads/2019/02/1_Tree_house_main-e1574150931187.jpg"); background-size: 100% 100%;}
+  90%{background-image: url("https://dtjew9b6f6zyn.cloudfront.net/wp-content/uploads/2017/06/5-103.jpg"); background-size: 100% 100%;}
+}
+
+#section-resto{
+  height: 780px;
+  width: 1510px;
+  margin-top: 100px;
+  margin-left: 0;
+  background-color: black;
+}
+
+.eighth-resto{
+  height: 600px;
+  width: 1100px;
+  position: absolute;
+  left: 215px;
+  top: 1100;
+  background-image: url('https://www.bakhabarkissan.com/wp-content/uploads/2019/07/L03719.jpg');
+  background-size: 100% 100%;
+  margin-top: 30px;
+  box-shadow: 1px 2px 10px 6px white;
+  animation: slider8 30s infinite linear;
+}
+
+@keyframes slider8 {
+  0%{background-image: url("https://www.bakhabarkissan.com/wp-content/uploads/2019/07/L03719.jpg"); background-size: 100% 100%;}
+  10%{background-image: url("https://images-gmi-pmc.edge-generalmills.com/82e0f8a1-367c-4534-83c3-69896838f0a2.jpg"); background-size: 100% 100%;}
+  20%{background-image: url("https://www.kulm.com/fileadmin/user_upload/kulm/Winter_2020/Media_Update/Food/Grand_Restaurant_Fruehstueck_1.jpg"); background-size: 100% 100%;}
+  30%{background-image: url("https://storage.googleapis.com/cdn.thelondoneconomic.com/wp-content/uploads/2019/02/Just-Eat-Partner_2.jpg"); background-size: 100% 100%;}
+  40%{background-image: url("https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F1177886278%2Fx.jpg"); background-size: 100% 100%;}
+  50%{background-image: url("https://tatomitho.sgp1.digitaloceanspaces.com/production/hotels/live-bakery-kamal-binayak/6vlaZLO6n2lDnK0A9ab9iu5W7IoOD7oIeciXn6Qn.jpeg"); background-size: 100% 100%;}
+  60%{background-image: url("https://img.traveltriangle.com/blog/wp-content/uploads/2018/02/133.jpg"); background-size: 100% 100%;}
+  70%{background-image: url("https://privateholidaysindia.s3.amazonaws.com/uploads/article/image/17/1391022518_large.jpeg"); background-size: 100% 100%;}
+  80%{background-image: url("https://caymanresident.com/images/_1500x1001_crop_center-center_100_line/Waterfront-Dining-at-Grand-Olde-House.jpg"); background-size: 100% 100%;}
+  90%{background-image: url("https://s1.1zoom.me/big0/434/Cocktail_Sea_447039.jpg"); background-size: 100% 100%;}
+}
+
+#section-clubs{
+  height: 780px;
+  width: 1510px;
+  margin-top: 100px;
+  margin-left: 0;
+  background-color: black;
+}
+
+.ninth-clubs{
+  height: 600px;
+  width: 1100px;
+  position: absolute;
+  left: 215px;
+  top: 1100;
+  background-image: url('https://images.unsplash.com/photo-1519214605650-76a613ee3245?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
+  background-size: 100% 100%;
+  margin-top: 30px;
+  box-shadow: 1px 2px 10px 6px white;
+  animation: slider9 30s infinite linear;
+}
+
+@keyframes slider9 {
+  0%{background-image: url("https://images.unsplash.com/photo-1519214605650-76a613ee3245?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"); background-size: 100% 100%;}
+  12%{background-image: url("https://www.seetorontonow.com/wp-content/uploads/2019/09/Dancing-In-The-Zone.jpg"); background-size: 100% 100%;}
+  25%{background-image: url("https://www.greetingsmedia.com/wp-content/uploads/2019/05/img2.jpg"); background-size: 100% 100%;}
+  38%{background-image: url("https://i.pinimg.com/736x/44/b1/28/44b1286a2aec8eb2b5bb64a95af895bc.jpg"); background-size: 100% 100%;}
+  50%{background-image: url("https://images.unsplash.com/photo-1543007630-9710e4a00a20?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"); background-size: 100% 100%;}
+  64%{background-image: url("https://i.pinimg.com/originals/27/bc/02/27bc026a210c5642b8be9751ee15ebb6.jpg"); background-size: 100% 100%;}
+  79%{background-image: url("https://images.unsplash.com/photo-1556035511-3168381ea4d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"); background-size: 100% 100%;}
+  90%{background-image: url("https://conflict-news.com/wp-content/uploads/2020/04/gotha-nightclub-cannes-interior.jpg"); background-size: 100% 100%;}
+}
